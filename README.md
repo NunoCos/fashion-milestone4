@@ -44,3 +44,41 @@ just a simple place where everyone can browse and just buy their favourite piece
 - As an admin/superuser, I want to recieve a confirmation email when a contact form is submitted.
 
 - As an admin/superuser, I want to have the ability to update site content.
+
+### 1. Strategy
+
+The main strategy of this project is to promote the sale of clothing there will be a several category selection and the user can browse straight away to the category that he/she wished to make a purchase
+
+####  Site Goals
+
+- Provide an easy navigation website.
+
+- Give a way to users easily chose clothing and checkout.
+
+- Offer easy interaction on the page.
+
+### 2. Scope
+
+- Fits in with my current skill-set of HTML, CSS, JavaScript, Python and Django.
+
+- Website information clearly relayed upon entering the home page.
+
+- Easy way to Sign Up, Log in and Log out.
+
+- Allow admin create, read, update and delete products.
+
+### 3. Structure
+
+The idea of the website is simple. Allow the user to buy a product and safely checkout.
+
+The website has the same design to keep consistency and provide easy and friendly navigation to the user.
+
+A clear communication is provided to the user after some interactions, using the messages function in Django.
+
+### 4. Skeleton
+-  Wireframes
+- Navigation bar - Menu with links pointing to each page
+    - **Home** -
+    - **Cart** -  Provide details of the purchase.
+    - **Checkout** - Users can check a purchase summary and are invited to enter their delivery and payment details.
+    - **Contact** - User can submit a form with their doubts and an email will be sent to the admin notifying about the request.
