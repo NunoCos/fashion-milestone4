@@ -77,6 +77,23 @@ A clear communication is provided to the user after some interactions, using the
 
 ### 4. Skeleton
 -  Wireframes
+
+    Homepage
+    ![homepage](docs/wireframes/Home.png)
+
+
+
+    Product Category page
+    ![men/women](docs/wireframes/Men_women.png)
+
+
+
+    Login
+    ![login page](docs/wireframes/login.png)
+
+
+
+
 - Navigation bar - Menu with links pointing to each page
     - **Home** -
     - **Cart** -  Provide details of the purchase.
