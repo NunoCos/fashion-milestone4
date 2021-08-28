@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -36,6 +42,12 @@ body {
 .btn-black {
     background: black;
     color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
 }
 
 .shop-now-button:hover,
@@ -84,6 +96,11 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+.navbar-header {
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 
