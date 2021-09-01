@@ -1,37 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
 {% block content %}
-{% url 'products' %}?category=deals
 
-<!-- Slideshow container -->
-<div class="slideshow">
-    <div class="slideshow-item">
-        <img src="media/img1.jpg" alt="">
-        <div class="slideshow-item-text">
-            <h4>Fashion Clothes for Everyone</h5>
-            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase py-3">Shop Now</a>
-        </div>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <h1>Give your life a new style</h1>
+        <a href="{% url 'products' %}" class="btn btn-lg text-uppercase py-3">Shop Now</a>
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
     </div>
 </div>
-<div class="slideshow">
-    <div class="slideshow-item">
-        <img src="media/white-background.jpg" alt="">
-        <div class="slideshow-item-text">
-            <h4>Checkout the new arrivals</h5>
-            <a href="?category=new_arrivals" class="shop-now-button btn btn-lg text-uppercase py-3">Shop Now</a>
-        </div>
-    </div>
-</div><div class="slideshow">
-    <div class="slideshow-item">
-        <img src="media/img1.jpg" alt="">
-        <div class="slideshow-item-text">
-            <h4>Checkout the new arrivals</h5>
-            <a href="{% url 'products' %}?category=deals" class="shop-now-button btn btn-lg text-uppercase py-3">Shop Now</a>
-        </div>
-    </div>
 </div>
-
 
 <!-- Services Section Begin -->
 <section class="services spad">
@@ -41,7 +31,7 @@
                 <div class="services__item">
                     <i class="fa fa-car"></i>
                     <h6>Free Shipping</h6>
-                    <p>For all orders over €99</p>
+                    <p>For all orders over €{{ free_delivery_threshold }}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -78,4 +68,5 @@
         $("#alert_msg").css('display','none');
     }, 2000);
 </script>
+
 {% endblock %}

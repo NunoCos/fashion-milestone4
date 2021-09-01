@@ -1,10 +1,14 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}">
+                Home
+            </a></li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu animate slideIn border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -16,7 +20,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Clothing
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu animate slideIn border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=men" class="dropdown-item">Men</a>
                 <a href="{% url 'products' %}?category=women" class="dropdown-item">Women</a>
                 <a href="{% url 'products' %}?category=kids" class="dropdown-item">Kids</a>
@@ -28,7 +32,7 @@
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu animate slideIn border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
