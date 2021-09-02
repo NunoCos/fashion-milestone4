@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.conf import settings
 from .forms import OrderForm
@@ -6,6 +6,8 @@ from shoppingbag.context import bag_contents
 import stripe
 from .models import Order, OrderLineItem
 from products.models import Product
+from django.views.decorators.http import require_POST
+import json
 
 
 def checkout(request):
