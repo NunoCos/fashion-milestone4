@@ -1,6 +1,6 @@
 # Milestone Fashion
 
-### [Live Site]()
+### [Live Site](https://milestone-fashion.herokuapp.com/)
 
 Milestone Fashion is a fashion website where user can buy the latest clothes. The clothes advertised are not from know designers neither high end fashion clothes,
 just a simple place where everyone can browse and just buy their favourite piece of clothe with no regret.
